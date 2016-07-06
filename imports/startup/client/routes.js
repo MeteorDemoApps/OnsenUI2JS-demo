@@ -5,6 +5,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import '../../ui/layouts/app-body.js';
 import '../../ui/pages/index.js';
 import '../../ui/pages/buttons.js';
+import '../../ui/pages/icons.js';
 import '../../ui/pages/page-not-found.js';
 
 
@@ -19,6 +20,13 @@ FlowRouter.route('/buttons', {
     name: 'buttons',
     action() {
         BlazeLayout.render('App_body', { main: 'buttons' });
+    }
+});
+
+FlowRouter.route('/icons', {
+    name: 'icons',
+    action() {
+        BlazeLayout.render('App_body', { main: 'icons' });
     }
 });
 

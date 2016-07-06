@@ -7,7 +7,9 @@ import './index.html';
 
 Template.index.events({
     'click #buttons'() {
-        console.log("buttons clicked");
         FlowRouter.go('buttons');
+    },
+    'click #icons'() {
+        FlowRouter.go('icons');
     }
 });
