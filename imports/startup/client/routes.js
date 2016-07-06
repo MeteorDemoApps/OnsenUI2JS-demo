@@ -28,3 +28,22 @@ FlowRouter.notFound = {
         BlazeLayout.render('App_body', { main: 'page_not_found' });
     }
 };
+
+FlowRouter.triggers.enter([enterPage]);
+FlowRouter.triggers.exit([exitPage]);
+
+function enterPage(context) {
+    // context is the output of `FlowRouter.current()`
+    console.log("enter new route");
+    // var options = {
+    //     animation: 'slide' // What animation to use
+    // };
+    // var myNavigator = document.querySelector("#myNavigator");
+    // myNavigator.pushPage(context.route.name, options);
+
+}
+
+function exitPage(context) {
+    // context is the output of `FlowRouter.current()`
+    console.log("exit current route");
+}
