@@ -1,0 +1,11 @@
+{
+  "name": "OnsenUI2JS",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "onsenui": "^2.0.0-rc.15"
+  }
+}
