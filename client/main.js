@@ -5,9 +5,12 @@ import 'onsenui/css/onsen-css-components.css';
 // import ons from 'onsenui/js/onsenui.js';
 import ons from 'onsenui';
 
+// Thanks https://github.com/frankdiox to help for fix this issue: https://github.com/MeteorDemoApps/OnsenUI2JS-demo/issues/1
+ons.platform.select("android");
+
 import './main.html';
 
-Template.buttons.onRendered(() => {
+Template.index.onRendered(() => {
     console.log("body loaded");
     ons.platform.select("android");
     ons.ready(() => {
@@ -16,12 +19,12 @@ Template.buttons.onRendered(() => {
 });
 
 
-Template.buttons.events({
-    'click #android-view'(event) {
-        console.log("android-view clicked");
-        console.log(ons.platform.isAndroid());
-        ons.platform.select("android");
-    }
-});
+// Template.buttons.events({
+//     'click #android-view'(event) {
+//         console.log("android-view clicked");
+//         console.log(ons.platform.isAndroid());
+//         ons.platform.select("android");
+//     }
+// });
 
 

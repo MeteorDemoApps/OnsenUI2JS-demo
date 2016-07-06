@@ -3,42 +3,60 @@
 </head>
 
 <body>
-    {{> buttons }}
+    {{> index }}
 </body>
 
-<template name="buttons">
+<template name="index">
     <ons-page>
         <ons-toolbar>
-            <div class="left">
-                <ons-toolbar-button>
-                    <ons-icon icon="md-menu"></ons-icon>
-                </ons-toolbar-button>
-            </div>
-            <div class="center">Buttons</div>
-            <div class="right">
-                <ons-toolbar-button>Button</ons-toolbar-button>
-            </div>
+            <div class="center">Component List</div>
         </ons-toolbar>
+        <br />
+        <ons-list modifier="inset">
+            <!--<ons-list-header>Button</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Button</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+            <!--<ons-list-item modifier="longdivider">-->
+                <!--<div class="left">-->
+                    <!--<ons-icon icon="md-face" class="list__item__icon"></ons-icon>-->
+                <!--</div>-->
+                <!--<div class="center">-->
+                    <!--Icon-->
+                <!--</div>-->
+            <!--</ons-list-item>-->
 
-        <section style="padding: 8px">
-            <ons-button id="android-view">Android View</ons-button>
-            <ons-button modifier="quiet">quiet</ons-button>
-            <ons-button>Default</ons-button>
-            <p></p>
-            <ons-button modifier="large--quiet">large--quiet / material--flat</ons-button>
-            <p></p>
-            <ons-button modifier="large">large</ons-button>
-        </section>
+            <!--<ons-list-header>Carousel</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Carousel</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
 
-        <section style="padding: 8px">
-            <p></p><br><br>
-            <ons-button modifier="quiet" disabled="true">quiet</ons-button>
-            <ons-button disabled="true">Default</ons-button>
-            <p></p>
-            <ons-button modifier="large--quiet" disabled="true">large--quiet / material--flat</ons-button>
-            <p></p>
-            <ons-button modifier="large" disabled="true">large</ons-button>
-        </section>
+            <!--<ons-list-header>Conditional</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Conditional</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
 
+            <!--<ons-list-header>Dialogs</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Dialogs</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+
+            <!--<ons-list-header>Floating Action Button</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Floating Action Button</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+
+            <!--<ons-list-header>Finger Gestures</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Finger Gestures</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+
+            <!--<ons-list-header>Grid</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Grid</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+
+            <!--<ons-list-header>Icon</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>Icon</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+
+            <!--<ons-list-header>...</ons-list-header>-->
+            <ons-list-item modifier="longdivider" tappable>...</ons-list-item>
+            <!--<ons-list-item modifier="longdivider">for future</ons-list-item>-->
+        </ons-list>
+        <br />
     </ons-page>
 </template>
