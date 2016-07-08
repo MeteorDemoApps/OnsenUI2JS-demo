@@ -1,30 +1,5 @@
 <template name="layout">
-    <ons-navigator id="myNavigator" page="page1.html"></ons-navigator>
-
-    <ons-template id="page1.html">
-        <ons-page id="page1">
-            <ons-toolbar>
-                <div class="center">Page 1</div>
-            </ons-toolbar>
-
-            <p>This is the first page.</p>
-
-            <ons-button id="push-button">Push page</ons-button>
-        </ons-page>
-    </ons-template>
-
-    <ons-template id="page2.html">
-        <ons-page id="page2">
-            <ons-toolbar>
-                <div class="left"><ons-back-button>Back</ons-back-button></div>
-                <div class="center"></div>
-            </ons-toolbar>
-
-            <p>This is the second page.</p>
-        </ons-page>
-    </ons-template>
-
-        <!--{{> index }}-->
-        <!--{{> buttons }}-->
-        <!--{{> icons }}-->
+    {{> index }}
+    {{> buttons }}
+    {{> icons }}
 </template>
